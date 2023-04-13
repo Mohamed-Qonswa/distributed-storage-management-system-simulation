@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Generator;
 
 import Balancer.Balancer;
@@ -131,7 +126,7 @@ try {
     int size = Integer.parseInt(jTextField2.getText());
 
 
-    balancer.generateItem(item, size);
+    balancer.addItem(item, size);
 
 } catch (NumberFormatException | NotBoundException | RemoteException e) {
     e.printStackTrace();
